@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ 
+//  DISHES TASK :
+
+ var dish=prompt("Enter a dish name")
+
+ switch(dish){ 
+case "biryani":console.log("price, 500");
+break;
+case "shawarma":console.log("price,250");
+break;
+case "fried rice":console.log("price,150");
+break;
+case "veg pula":console.log("price,100");
+break;
+default:console.log("no match");
+
+ } 
+
+// OPERATORS TASK : 
+var a=+prompt("enter a number:");
+var b=+prompt("enter a second number:");
+var operator=prompt("enter a operator");
+switch(operator){
+    case "+" :console.log(a+b);
+    break;
+    case "-" :console.log(a-b);
+    break;
+    default:console.log("not valid"); 
+}
+
+// Task 1:
+//  Day of the Week Message
+// Scenario: Develop a webpage that displays a special message based on the current day of the week.
+
+// “Start your week strong!” for Monday.
+// “Keep going!” for Tuesday.
+// “Halfway there!” for Wednesday.
+// “Almost the weekend!” for Thursday.
+// “Happy Friday!” for Friday.
+// “Enjoy your weekend!” for Saturday and Sunday.
+
+// Task:d 
+// Get the current day of the week.
+// Display the corresponding message.
+
+var day=prompt("enter your day");
+ switch(day){
+    case "monday":console.log( day,"start your week strong");
+    break;
+    case "tuesday":console.log( day,"keep going");
+    break;
+    case "wednesday":console.log( day,"halfway there!")
+    break;
+    case "thursday":console.log( day,"almost the weekend");
+    break;
+    case "friday":console.log(day,"happy friday");
+    break;
+    case "saturday":console.log(day,"enjoy your weekend");
+    break;
+    case "sunday":console.log(day,"enjoy your weekend");
+    break;
+    default:console.log("no day");
+ }
+
+//  Task 2: 
+//  Discount Calculator
+// Scenario: Calculate the discount based on the total purchase amount.
+
+// “No discount” if the amount is less than $50.
+// “5% discount” if the amount is between $50 and $100.
+// “10% discount” if the amount is between $101 and $200.
+// “15% discount” if the amount is above $200.
+// Task:
+
+// Prompt the user to enter the total purchase amount.
+// Display the discount percentage.
+
+   var a=prompt("enter purchase amount ");
+ 
+  if(a<50){
+    console.log( a,"no discount");
+  }
+  else if(a<=100){
+    console.log( a,"5% discount");
+  }
+  else if(a<=200){
+    console.log( a,"10% discount");
+  }
+  else{
+    console.log(a,"15% discount"); 
+  } 
+ 
+
+
+
+
+    </script>
+</body>
+</html>

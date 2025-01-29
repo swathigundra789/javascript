@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    // DEBUGGER :
+//    debugger;
+//    var a=20;
+//    console.log(a)
+
+//    OPERATORS 
+// 1. ARITHMATIC OPERATOR :
+ var a=20;
+ var b=10;
+ console.log(a+b) 
+ console.log(a-b)
+ console.log(a*b)
+ console.log(a/b)
+ console.log(a%b)
+ console.log(a**b)
+//  post increment 
+ console.log(a++) 
+ console.log(a) 
+//  pre increment 
+ console.log(++a)  
+//  post decrement 
+ console.log(a--)
+ console.log(a) 
+//  pre decrement 
+ console.log(--a) 
+
+//  2. ASSIGNMENT OPERATOR : assigning value to a variable  :  +=, -=, *= , %=, **=,  /=
+var a =10;
+a+=10;
+a+=20;
+// a=a+10;
+console.log(a)
+var c=10;
+var d=c+10; 
+ e=d+20;  
+ e*=10;
+ e%=10;
+ e/=20;
+ e**=1;
+console.log(d)
+console.log(e)
+console.log(e+20) 
+console.log(d-20)  
+console.log(c/10)
+console.log(c%10) 
+console.log(e)
+console.log(e)
+console.log(e) 
+
+// 3. COMPARISION OPERATOR : <,>,<=,>=,==,===,==!
+ 
+var a=1;
+var b=10;
+console.log(a==b) 
+console.log(a<b)
+console.log(a>b)
+console.log(a>=b)
+console.log(a<=b)
+console.log(a===b) 
+console.log(a!==b)
+
+// 4. LOGICAL OPERATOR : && , || , (logical not) ! 
+//    && :                 || :
+//    T&&T= T           T||T=T
+//    T&&F=F            T||F=T
+//    F&&T=F            F||T=T
+//    F&&F=F            F||F=F
+// logical not(!): when it is true then we can use ! then it will false .
+
+var a=true;
+var b=false;
+console.log(a&&b) 
+console.log(b&&a)
+console.log(a&&a)
+console.log(b&&b)
+console.log(a||a)
+console.log(b||b)
+console.log(a||b)
+console.log(b||a)
+// ! 
+console.log(!(a&&a)) 
+console.log(!(a||a))   
+
+
+
+// PROMPT : IT IS USED TO COLLECT DATA FROM USER :
+
+
+var a=+prompt("enter number"); 
+console.log(a);
+
+
+// TERNERY OPERATOR : it is  based on condition . when it is true go to first expression , when it is false go to second expression. 
+
+var a=3
+b=(a<3)?console.log("it is true"):console.log("it is false")
+
+ var a=31
+ b=(a==31)?console.log("it is true"):console.log("it is false")
+
+var a=50
+b=(a<20)?console.log("cold"):console.log("hot")  
+
+var a=60
+b=(a<=20)?"cold":(a<=40)?"normal":(a<=60)?"hot":veryhot;
+   console.log(b)
+
+// 2 . WRITE A JAVASCRIPT SCRIPT THAT USES THE TERNARY OPERATOR TO DETERMINE IF A NUMBER IS EVEN OR ODD :
+ 
+// ODD NUMBER :
+var a=10
+c=(a%2==5)?"it is even number":"it is odd number"; 
+console.log(c) 
+// EVEN NUMBER :
+c=(a%2==0)?"it is even number":"it is odd number";
+console.log(c)
+// EVEN NUMBER : 
+ var a=2
+  c=(a%2==5)?"it is even number":(a%2==0)?"second exp even number":"second exp oddnumber";
+  console.log(c)
+//   EVEN NUMBER :
+  c=(a%2==3)?"it is even nbr":(a%2==2)?"second exp even nbr":(a%2==0)?"third exp even nbr":"third exp odd number";
+  console.log(c)
+//   ODD NUMBER :
+  c=(a%2==4)?"it is even nbr":(a%2==0)?"second exp odd nbr":"second exp even nbr";
+  console.log(c)
+
+
+// 3 . DECLARE A VARIABLE SCORE AND SET IT TO A VALUE BETWEEN 0 AND 100 . BY USING NESTED TERNARY OPERATORS TO CLASSIFY THE SCORE INTO GRADES :A(>=90) , B(>=75) , C(>=60) , D(>=45), F  (BELOW 45). 
+
+var a=30
+b=(a>=90)?"a grade":(a>=75)?"grade b":(a>=60)?"grade C":(a>=45)?"grade D":"fail"; 
+console.log(b)
+
+// 4. DECLARE A VARIABLE TEMPERATURE . BY USING NESTED TERNERY  OPERATOR TO CATEGORIZE IT AS "HOT" (ABOVE 30), "WARM"(20-30), "COOL"(10-19) , "COLD" (BELOW 10) :
+
+var a=7
+c= (a>30)?"hot":(a<=30)?"warm":(a<=19)?"cool":"cold"
+console.log(c) 
+
+
+
+// 5. DECLARE A VARIABLE AGE. BY USING NESTED TERNERY OPERATOR TO CLASSIFY THE AGE INTO "CHIID"(0-12) , "TEEN"(13-19), "ADULT"(20-64) AND SENIOR ( 65 AND ABOVE)
+ var a=7
+  
+b=(a<=12)?"child":(a<=19)?"teen":(a<=64)?"adult":"senior";
+console.log(b) 
+// 6. declare a variable major or minor . by using nested ternery operator adult (18+) or minor :
+
+var a=18
+b=(a>=18)?"adult":"minor";
+console.log(b)
+
+
+
+</script>
+
+</body>
+</html>
