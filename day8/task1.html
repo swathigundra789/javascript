@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- FUNCTIONS  -->
+    <button onclick="hello()">click me</button>
+   
+    <button onclick="num(1)">1</button>
+    <button onclick="num(2)">2</button>
+    <button onclick="num(3)">3</button>
+
+
+<script>
+
+function hello(){
+    console.log("hello world")
+}
+ hello()
+//  reusability 
+ hello()
+
+// displaying numbers 
+function iterate(){
+    for(i=1;i<=10;i++){
+        console.log(i)
+    }
+}
+iterate()
+
+// adding two numbers 
+function sum(){
+    var a=10;
+    var b=5;
+    console.log(a+b)
+}
+sum()
+// using arguments and parameters 
+
+function sum(a,b){
+    console.log(a+b)
+}
+sum(2,3)
+sum(5,5)
+sum(10,20) 
+
+// clicking buttons then we get value 
+
+function num(val){
+    console.log(val)
+} 
+
+// taking values from user 
+var data1=prompt("enter first number ")
+var data2=prompt("enter second number")
+function sum(a,b){
+    console.log(a+b)  
+}
+sum(data1 , data2) 
+sum(data1,data2)
+
+// welcoming function with name 
+
+name=prompt("enter a name")
+function greet(a){
+    console.log("welcome to" ,+a)
+}
+greet(name) 
+// default value  for above greet example
+
+function greet(a="dear")
+
+// using return 
+function hello(){
+console.lohg("hello wrold")
+return "john"
+}
+</script>
+
+    
+</body>
+</html>

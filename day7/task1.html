@@ -1,0 +1,120 @@
+ <!-- FOR IN : to iterate an array
+
+
+ to iterate values : -->
+a=[10,11,12,13]
+for(i in a){
+    console.log(a[i]) 
+}
+<!-- print indexes  --> 
+a=[10,11,12,13]
+for(i in a){
+    console.log(i)
+}
+
+<!-- print keys in object  -->
+let obj={
+    name:"john",
+    age:25,
+}
+
+for(i in obj){ 
+    console.log(i)
+}
+<!-- print values in obj - -->
+let obj={
+    name:"swetha",
+    age:25 
+}
+for(i in obj){
+    console.log(obj[i])
+}
+
+<!-- TO REVERSE A STRING  -->
+
+let str="js is amazing"
+rev=""
+for(i in str){
+    rev=str[i]+rev;
+}
+console.log(rev) 
+
+
+<!-- print sum of numbers using FOR IN LOOP  -->
+var a=[1,2,3];
+sum=0;
+for(i in a){ 
+    sum+=a[i] 
+}
+console.log(sum)
+
+
+<!-- FOR OF : it is used to only terminate values  --> 
+
+arr=["swetha","sofia","manisha"]
+for(i of arr){
+    console.log(i) 
+} 
+
+<!-- iterate objects using for of loop     -->
+
+<!-- print the values  -->
+ for(i of Object.values(obj)) 
+
+
+ <!-- print the keys  -->
+  for(i of Object.keys(obj)){
+    console.log(i)
+  } 
+  <!-- print the keys and values  -->
+   for([i,j] of Object.entries(obj)){
+    console.log(i,j)
+   }   
+
+
+   <!-- PRINT MAX AND MIN NUMBERS  -->
+
+   str="34531"
+   min=str[0];
+   max=str[0];
+   for(i in str){
+    if(min>str[i]){
+        min=str[i]
+    }
+    if(max>str[i]){
+        max=str[i] 
+    }
+   }
+   console.log(max,min)  
+
+   <!-- PRIMENUMBERS: not divisible or multiply with anyone  --> 
+
+   num=11;
+   count=true
+   for(i=2;i<num;i++){
+       if(num%i==0){ 
+       console.log("it is non prime") ;
+       count=false;
+       break
+   } 
+   }
+   if(count){
+       console.log("it is prime")
+   }
+
+   <!--2.  printing multiple prime numbers  -->
+
+   for(num=2;num<=30;num++){
+
+    count=true
+    for(i=2;i<num;i++){
+        if(num%i==0){ 
+        console.log("it is non prime") ;
+        count=false;
+        break
+    } 
+    }
+    if(count){
+        console.log("it is prime")
+    } 
+   }
